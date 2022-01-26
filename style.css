@@ -36,6 +36,7 @@ nav ul li {
 	margin-left: 20px;
 	cursor: pointer;
 	border-bottom: 1px solid #fff;
+    align-items: center;
 }
 
 nav ul li img{
