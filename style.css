@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Oswald:wght@300&display=swap');
 
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	width: auto\9;
+  }
 
-/* this is used to change the display of hiverlink. 'text-decoration: none' kept showing a small bar at the bottom so I changed color to white to solve this issue */
+/* this is used to change the display of hyperlink. 'text-decoration: none' kept showing a small bar at the bottom so I changed color to white to solve this issue */
 a:visited { text-decoration: underline dotted white; color:black; }
 a:hover { text-decoration: underline dotted white; color:black; }
 a:focus { text-decoration: underline dotted white; color:black; }
