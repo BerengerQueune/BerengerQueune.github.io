@@ -1,46 +1,4 @@
-<html lang="fr">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
-		<title>
-			Créer un Portfolio Moderne en HTML & CSS et le mettre en Ligne
-		</title>
-	</head>
-	<body>
-		<nav>
-			<div class="profile">
-				<img src="images/image_profile.jpeg" alt="profile photo" />
-				<h1><a href="index.html">Bérenger Queune</a></h1>
-			</div>
-			<ul>
-                <a href="https://www.linkedin.com/in/b%C3%A9renger-queune/">
-				    <li><img src="images/LinkedIn_logo_initials.png" alt="Linkedin Profile" /></li>
-                </a>
-                <a href="https://github.com/BerengerQueune">
-				    <li><img src="images/github_logo.png" alt="Github Profile" /></li>
-                </a>
-                <li>Resume</li>
-                <li><a href="#my_projects">Projects</a></li>
-                <li><a href="about.html" title="About Me">About Me</a></li>
-			</ul>
-		</nav>
-
-		<section class="page-content">
-
-
-			<div class="presentation-image">
-                <img src="images/background_computer.jpg" alt="AI image" />
-                    <header>
-                        <h1>Hi, I'm Bérenger</h1>
-                        <p>
-                            After 15+ years working in Customer Services I had the opportunity to reshape my career and I decided to go on the Data path.
-                        </p>
-                    </header>
-            </div>
-
-			<section class="projects-section">
+<section class="projects-section">
                 <p id="my_projects"></p>
 				<h1>Projects</h1>
                 <h2>At Wild Code School - 5 months Data Analyst training</h2>
@@ -101,29 +59,3 @@
                     <p class="dates">Dates 2020 - 2021</p>
                 </div>
 			</section>
-		</section>
-
-        <script src="YOUR_FILE.js"></script>
-
-
-		<footer>
-			<div class="colonne">
-				<h3></h3>
-				<p></p>
-				<p></p>
-				<p></p>
-			</div>
-			<div class="colonne">
-				<h3></h3>
-				<p></p>
-				<p></p>
-				<p></p>
-			</div>
-			<div class="colonne">
-				<h3></h3>
-				<p></p>
-				<p></p>
-				<p></p>
-			</div>
-		</footer>
-	</body>

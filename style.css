@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Oswald:wght@300&display=swap');
 
+
+/* this is used to change the display of hiverlink. 'text-decoration: none' kept showing a small bar at the bottom so I changed color to white to solve this issue */
+a:visited { text-decoration: underline dotted white; color:black; }
+a:hover { text-decoration: underline dotted white; color:black; }
+a:focus { text-decoration: underline dotted white; color:black; }
+a:hover, a:active { text-decoration: underline dotted white; color:black; }
+a:link { text-decoration: underline dotted white; color:black; }
+
+
 body {
 	font-family: 'Noto Sans JP', sans-serif;
 	padding: 0 2%;
@@ -13,6 +22,7 @@ nav {
 	align-items: center;
 	background-color: white;
 	position: sticky;
+	z-index: 1;
 	top: 0;
 }
 nav .profile {
@@ -38,7 +48,7 @@ nav ul li {
 	margin-left: 20px;
 	cursor: pointer;
 	border-bottom: 1px solid #fff;
-    
+
 }
 
 nav ul li img{
@@ -65,10 +75,31 @@ nav ul li:hover {
 	text-transform: uppercase;
 	font-family: 'Oswald', sans-serif;
 	font-size: 6vw;
+    color: rgb(194, 33, 33);
 }
+
+.presentation-image {
+	position: relative;
+	text-align: center;
+	color: white;
+  }
+
+/*TEST de changement de CSS sur text sur l'image */
+.presentation-image header h1 {
+	color: rgb(255, 255, 255);
+	position: absolute;
+	top: 8px;
+	left: 16px;
+}
+
+
 .page-content header p {
 	line-height: 30px;
-	color: #818181;
+	color: #ffffff;
+	position: absolute;
+	top: 140px;
+	left: 20px;
+	text-align: left;
 }
 .page-content header button {
 	background-color: inherit;
@@ -109,11 +140,22 @@ nav ul li:hover {
 	margin-right: 20px;
 	max-width: 195px;
 }
+
+/* attempt to adapt an image on projects */
+.page-content .projects-section .project img {
+	position: relative;
+	text-align: center;
+	color: white;
+	width: 200px;
+	height: 200px;
+    margin-top: 5px;
+}
+
 .page-content .projects-section .project h4 {
 	margin: 0;
 }
 .page-content .projects-section .project .description {
-	font-size: 10px;
+	font-size: 15px;
 }
 .page-content .projects-section .project .dates {
 	font-size: 13px;
