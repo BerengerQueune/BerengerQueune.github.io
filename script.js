@@ -68,9 +68,11 @@ document.write(
 			); 
 
 
-			var content = document.querySelector('link[rel="import"]').import;
+			
 			*/
 
 
 
 document.write("RRRRRRRRRRRR");
+
+var content = document.querySelector('link[rel="import"]').import;
