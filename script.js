@@ -1,3 +1,5 @@
+/*
+document.write(
 <section class="projects-section">
                 <p id="my_projects"></p>
 				<h1>Projects</h1>
@@ -59,3 +61,16 @@
                     <p class="dates">Dates 2020 - 2021</p>
                 </div>
 			</section>
+			
+
+			
+
+			); 
+
+
+			var content = document.querySelector('link[rel="import"]').import;
+			*/
+
+
+
+document.write("RRRRRRRRRRRR");
