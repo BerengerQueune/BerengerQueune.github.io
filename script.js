@@ -75,4 +75,3 @@ document.write(
 
 document.write("RRRRRRRRRRRR");
 
-var content = document.querySelector('link[rel="import"]').import;
