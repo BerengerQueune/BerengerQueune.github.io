@@ -73,5 +73,3 @@ document.write(
 
 
 
-document.write("RRRRRRRRRRRR");
-
