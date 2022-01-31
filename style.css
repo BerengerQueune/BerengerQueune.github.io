@@ -374,11 +374,21 @@ footer {
     margin: 0 auto;
 }
 
-.project_area p {
+.project_area p .highlightme{
 
-	text-align: center;
+	color:#ca2a75;
+	font-weight:bold;
 }
 
+
+
+
+
+.project_area p a:visited { text-decoration:none; color:#50b494; font-weight:bold; }
+.project_area p a:hover { text-decoration: none; color:#50b494; font-weight:bold; }
+.project_area p a:focus { text-decoration: none; color:#50b494; font-weight:bold; }
+.project_area p a:hover, a:active { text-decoration: none; color:#50b494; font-weight:bold; }
+.project_area p a:link { text-decoration: none; color:#50b494; font-weight:bold; }
 
 /* project_area div */
 /* project_area div */
