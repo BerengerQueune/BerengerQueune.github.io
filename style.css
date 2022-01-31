@@ -32,7 +32,6 @@ a:link { text-decoration: underline dotted white; color:black; }
 
 body {
 	font-family: 'Noto Sans JP', sans-serif;
-	margin: 0;
 }
 
 /* Navigation Bar */
@@ -52,6 +51,17 @@ nav {
 	z-index: 1;
 	top: 0;
 	height: 60px;
+}
+
+nav img {
+	width: 45px;
+	height: 45px;
+    margin-top: 5px;   
+	border-bottom: 0px solid #A7D9C9;
+}
+
+nav img:hover {
+	opacity: 0,3;
 }
 
 nav .profile {
@@ -79,11 +89,6 @@ nav ul li {
 	cursor: pointer;
 }
 
-nav ul li img{
-	width: 40px;
-	height: 40px;
-    margin-top: 5px;   
-}
 
 nav ul li:hover {
 	border-bottom: 3px solid #A7D9C9;
@@ -114,7 +119,7 @@ nav ul li:hover {
 	background-color: #F6F7FB;
 	width: 100%;
 	height: 700px;
-	text-align: center;
+	
 }
 
 .presentation_area h1{
@@ -123,6 +128,7 @@ nav ul li:hover {
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
 	font-size: 3vw;
+	text-align: center;
 }
 
 /* box div */
@@ -160,25 +166,7 @@ nav ul li:hover {
 	opacity: 0.3;
 }
 
-.presentation_area .box .media {
-	width: 160px;
-	height: 60px;
-	position: absolute;
-	margin: 0 auto;
-	top: 260px;
-	left: 62%;
-	display:inline-block;	
-}
 
-.presentation_area .box .media img {
-	width: 60px;
-	height: 60px;
-	position: relative;
-	margin: 0 auto;
-	margin-left: 10px;
-	border-radius: 0%;
-	border: 0px solid #A7D9C9;
-}
 
 /* box div */
 /* box div */
@@ -207,7 +195,6 @@ nav ul li:hover {
 }
 
 .page-content h1 {
-	margin: 0;
 	text-transform: uppercase;
 	font-family: 'Oswald', sans-serif;
 	font-size: 3vw;
@@ -222,8 +209,7 @@ nav ul li:hover {
 
 .page-content .projects-section .projects {
 	display: flex;
-	flex-wrap: wrap;
-	
+	flex-wrap: wrap;	
 }
 
 .page-content .projects-section .project {
