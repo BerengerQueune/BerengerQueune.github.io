@@ -19,11 +19,11 @@ img {
 }
 
 /* this is used to change the display of hyperlink. 'text-decoration: none' kept showing a small bar at the bottom so I changed color to white to solve this issue */
-a:visited { text-decoration: underline dotted white; color:black; }
-a:hover { text-decoration: underline dotted white; color:black; }
-a:focus { text-decoration: underline dotted white; color:black; }
-a:hover, a:active { text-decoration: underline dotted white; color:black; }
-a:link { text-decoration: underline dotted white; color:black; }
+nav a:visited { text-decoration: underline dotted white; color:black; }
+nav a:hover { text-decoration: underline dotted white; color:black; }
+nav a:focus { text-decoration: underline dotted white; color:black; }
+nav a:hover, a:active { text-decoration: underline dotted white; color:black; }
+nav a:link { text-decoration: underline dotted white; color:black; }
 
 
 
@@ -217,12 +217,7 @@ nav ul li:hover {
 	
 }
 
-.page-content .projects-section .project:hover {
-	
-	border: 1px solid #F6F7FB;
-	transition: 0.7s;
-	
-}
+
 
 .page-content .projects-section .project h4 {
 	color:white;
@@ -377,13 +372,13 @@ footer {
 	width: 60%;
 	position:relative;
     margin: 0 auto;
-	background-color: lawngreen;
 }
 
 .project_area p {
 
 	text-align: center;
 }
+
 
 /* project_area div */
 /* project_area div */
