@@ -3,11 +3,11 @@
 * {
 	margin: 0;
 	padding: 0;
-  }
+}
 
   html {
 	scroll-behavior: smooth;
-  }
+}
 
 img {
 	border: 0;
@@ -16,7 +16,7 @@ img {
 	height: auto;
 	width: auto;
 	width: auto\9;
-  }
+}
 
 /* this is used to change the display of hyperlink. 'text-decoration: none' kept showing a small bar at the bottom so I changed color to white to solve this issue */
 a:visited { text-decoration: underline dotted white; color:black; }
@@ -25,11 +25,7 @@ a:focus { text-decoration: underline dotted white; color:black; }
 a:hover, a:active { text-decoration: underline dotted white; color:black; }
 a:link { text-decoration: underline dotted white; color:black; }
 
-h4 {
-	text-align: center;
 
-
-}
 
 
 
@@ -39,14 +35,13 @@ body {
 	margin: 0;
 }
 
-
 /* Navigation Bar */
 /* Navigation Bar */
 /* Navigation Bar */
 /* Navigation Bar */
 /* Navigation Bar */
 
-  nav {
+nav {
 	padding: 0 2%;
 	display: flex;
 	flex-wrap: wrap;
@@ -58,41 +53,40 @@ body {
 	top: 0;
 	height: 60px;
 }
+
 nav .profile {
 	display: flex;
 	align-items: center;
 }
+
 nav .profile img {
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
 }
+
 nav .profile h1 {
 	font-size: 20px;
 }
+
 nav ul {
 	display: flex;
 	list-style-type: none;
-    align-items: center;
-    
+    align-items: center;  
 }
 nav ul li {
 	margin-left: 20px;
 	cursor: pointer;
-	
-
 }
 
 nav ul li img{
 	width: 40px;
 	height: 40px;
-    margin-top: 5px;
-    
-    
+    margin-top: 5px;   
 }
 
 nav ul li:hover {
-	border-bottom: 3px solid #97C1A9;
+	border-bottom: 3px solid #A7D9C9;
 	margin-bottom: -3px;
 }  
 
@@ -109,175 +103,207 @@ nav ul li:hover {
 
 
 
-/* Presentation div */
-/* Presentation div */
-/* Presentation div */
-/* Presentation div */
-/* Presentation div */
+/* presentation_area div */
+/* presentation_area div */
+/* presentation_area div */
+/* presentation_area div */
+/* presentation_area div */
 
-.presentation {
+.presentation_area {
 
-	background-color: #D4F0F0;
+	background-color: #F6F7FB;
 	width: 100%;
 	height: 700px;
-	position: relative;
+	text-align: center;
 }
 
-.presentation h1{
+.presentation_area h1{
 	line-height: 300px;
 	height: 200px;
-	text-align: center;
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
 	font-size: 3vw;
 }
 
-.presentation img{
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-	margin-left: 30%;
+/* box div */
+/* box div */
+/* box div */
+/* box div */
+/* box div */
+
+.presentation_area .box{
+
+	width: 40%;
+	height: 400px;
+	position:relative;
+    margin: 0 auto;
+}
+
+.presentation_area .box img{
+	width: 250px;
+	height: 300px;
 	margin-top: 50px;
-	position:absolute;
+	float:left;
+	border-radius: 5%;
+	border: 3px solid #A7D9C9;
 }
 
-.presentation p{
+.presentation_area .box p{
 
 	width: 200px;
-	margin-left: 50%;
 	margin-top: 50px;
-	position:absolute;
-
+	float: right;
+	margin-right: 100px;
 }
 
-/* Presentation div */
-/* Presentation div */
-/* Presentation div */
-/* Presentation div */
-/* Presentation div */
-
-
-
-.page-content {
-	background-color: #ffffff;
-}
-.page-content header {
-	margin-top: 5%;
-	max-width: 80%;
-}
-.page-content header h1 {
-	margin: 0;
-	text-transform: uppercase;
-	font-family: 'Oswald', sans-serif;
-	font-size: 6vw;
-    color: rgb(194, 33, 33);
-}
-
-.presentation-image {
-	position: relative;
-	text-align: center;
-	color: white;
-  }
-
-/*TEST de changement de CSS sur text sur l'image */
-.presentation-image header h1 {
-	color: rgb(255, 255, 255);
-	position: absolute;
-	top: 8px;
-	left: 16px;
-}
-
-
-.page-content header p {
-	line-height: 30px;
-	color: #ffffff;
-	position: absolute;
-	top: 140px;
-	left: 20px;
-	text-align: left;
-}
-.page-content header button {
-	background-color: inherit;
-	border: none;
-	outline: none;
-	padding: 0;
-	font-size: 15px;
-	font-weight: bold;
-	padding-bottom: 5px;
-	border-bottom: 1px solid #ccc;
-	cursor: pointer;
-}
-.page-content header button:hover {
-	color: #ccc;
-	border-bottom-color: #000;
-}
-.page-content .presentation-image {
-	margin-top: 5%;
-}
-.page-content .presentation-image img {
-	max-width: 100%;
-	height: auto;
-}
-
-.page-content .projects-section {
-
-}
-.page-content .projects-section h1 {
-	font-family: 'Oswald', sans-serif;
-	text-transform: uppercase;
-	font-size: 3vw;
-}
-.page-content .projects-section .projects {
-	display: flex;
-	flex-wrap: wrap;
-}
-.page-content .projects-section .project {
-	margin-right: 20px;
-	max-width: 14%;
-}
-
-.project:hover img {
+.presentation_area .box a img:hover {
 	opacity: 0.3;
 }
 
+.presentation_area .box .media {
+	width: 160px;
+	height: 60px;
+	position: absolute;
+	margin: 0 auto;
+	top: 260px;
+	left: 62%;
+	display:inline-block;	
+}
 
-/* attempt to adapt an image on projects */
-.page-content .projects-section .project img {
+.presentation_area .box .media img {
+	width: 60px;
+	height: 60px;
 	position: relative;
+	margin: 0 auto;
+	margin-left: 10px;
+	border-radius: 0%;
+	border: 0px solid #A7D9C9;
+}
+
+/* box div */
+/* box div */
+/* box div */
+/* box div */
+/* box div */
+
+/* presentation_area div */
+/* presentation_area div */
+/* presentation_area div */
+/* presentation_area div */
+/* presentation_area div */
+
+
+
+/* page-content section */
+/* page-content section */
+/* page-content section */
+/* page-content section */
+/* page-content section */
+
+.page-content {
+	background-color: #ffffff;
+	padding: 0 2%;
+	
+}
+
+.page-content h1 {
+	margin: 0;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 3vw;
 	text-align: center;
-	width: 100%;
-	height: 200px;
-    margin-top: 5px;
+	margin-top: 50px;
+}
+
+.page-content h2 {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.page-content .projects-section .projects {
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+.page-content .projects-section .project {
+
+	width: 14%;
+	margin: 0 auto;
+	border: 3px solid #000000;
+	background-color: #A7D9C9;
+	height: 300px;
+	border-radius: 5%;
+	
 }
 
 .page-content .projects-section .project h4 {
-	margin: 0;
-}
-.page-content .projects-section .project .description {
-	font-size: 15px;
-}
-.page-content .projects-section .project .dates {
-	font-size: 13px;
-	color: rgb(145, 145, 145);
+	color:white;
+	text-align: justify;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	padding: 0 4%;
 }
 
-footer {
-	margin-top: 5%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	padding: 10px;
-	background-color: rgb(255, 255, 255);
-	color: white;
+.page-content .dates {
+	font-size: 20px;
+	color: rgb(145, 145, 145);
+	text-align: center;
+	margin-bottom: 30px;
 }
-footer .colonne p {
-	font-size: 12px;
-	color: #ccc;
-	cursor: pointer;
+
+.page-content .projects-section .project .card_title {
+	width: 100%;
+	background-color: #A7D9C9;
+	border-radius: 5%;
+	height: 100%;
+	position:relative;
+	
 }
-footer .colonne p:hover {
-	color: #fff;
+
+.page-content .projects-section .project .card_title:hover {
+	opacity: 0;
+	transition: 0.7s;
 }
+
+.page-content .projects-section .project .card_description {
+	width: 100%;
+	text-align: center;
+	background-color: #A7D9C9;
+	border-radius: 5%;
+	height: 100%;
+	position:relative;
+	margin-top: -300px;
+	opacity:0;
+}
+
+.page-content .projects-section .project .card_description:hover {
+	opacity:1;
+	transition: 0.7s;
+}
+
+.page-content .projects-section .project .card_description p {
+	color:white;
+	text-align: justify;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	padding: 0 4%;
+
+}
+
+
+/* page-content section */
+/* page-content section */
+/* page-content section */
+/* page-content section */
+/* page-content section */
+
 
 @media screen and (max-width: 700px) {
 	nav {

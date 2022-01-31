@@ -29,15 +29,10 @@
             <h1><a href="index.html">Home</a></h1>
         </div>
         <ul>
-            <a href="https://www.linkedin.com/in/b%C3%A9renger-queune/">
-                <li><img src="images/LinkedIn_logo_initials.png" alt="Linkedin Profile" /></li>
-            </a>
-            <a href="https://github.com/BerengerQueune">
-                <li><img src="images/github_logo.png" alt="Github Profile" /></li>
-            </a>
-            <li>Resume</li>
-            <li><a href="#my_projects">Projects</a></li>
             <li><a href="#about_me">About me</a></li>
+            <li><a href="#my_projects">Projects</a></li>
+            <li>Resume</li>
+            
         </ul>
     </nav>
 
@@ -55,14 +50,29 @@
 <!--Presentation div-->
 <!--Presentation div-->
 
-<div class="presentation">
+<div class="presentation_area">
     <p id="about_me"></p>
 	<h1>Hi, I'm Bérenger</h1>
-	<img src="images/image_profile.jpeg" alt="profile photo" />
-	<p>
-		I am a student Data Analyst currently learning 
-        at the Wild Code School.
-	</p>
+    <div class="box">
+        <img src="images/berenger.png" alt="profile photo" />
+
+        <p>
+            I am a student Data Analyst currently learning 
+            at the Wild Code School.
+            <br><br>
+            I will start a 5 months Data Engineer training at Jedha Bootcamp in February.
+        </p>
+
+        <div class="media">
+            <a href="https://www.linkedin.com/in/b%C3%A9renger-queune/">
+                <img src="images/LinkedIn_logo_initials.png" alt="Linkedin Profile" />
+            </a>
+            <a href="https://github.com/BerengerQueune">
+                <img src="images/github_logo.png" alt="Github Profile" />
+            </a>
+        </div>
+    </div>
+
 </div>
 
 <!--Presentation div-->
@@ -70,93 +80,120 @@
 <!--Presentation div-->
 <!--Presentation div-->
 <!--Presentation div-->
-
+<p id="my_projects"></p>
 		<section class="page-content">
 
-
+            
 			<section class="projects-section">
-                <p id="my_projects"></p>
+                
 				<h1>Projects</h1>
                 <h2>Wild Code School: 5 months Data Analyst training</h2>
+                <p class="dates">September 2021 to February 2022</p>
 				<div class="projects">
-					<div class="project">
-						<h4>Mockup Dashboard on Tableau
-                            <p class="dates">September 2021</p>
-                        </h4>
-                        <a href="tableau_project.html">
-                            <img src="images/tableau_logo.png" alt="Tableau Project" />
-                        </a>
-					</div>
-					<div class="project">
-						<h4>Movie recommendation system
-                            <p class="dates">October to November 2021</p>
-                        </h4>
-						<!--<p class="description">With the IMDb database, I used Python and Pandas to clear the database. Then Sickit-learn for Machine Learning. I developped a webapp with the Streamlit Python Library to display the recommendations.</p>-->
-                        <a href="tableau_project.html">
-                            <img src="images/IMDb_logo.png" alt="Tableau Project" />
-                        </a>
-					</div>
-					<div class="project">
-						<h4>Determine music track popularity
-                            <p class="dates">November 2021</p>
-                        </h4>
-						<!--<p class="description">With the Spotify database, Python, Pandas, Sickit-learn I made a webapp on streamlit where people can tweak a music track characteristics to find out the influence on potential popularity.</p>-->
-                        <a href="tableau_project.html">
-                            <img src="images/spotify_logo.png" alt="Tableau Project" />
-                        </a>
-						
-					</div>
-					<div class="project">
-						<h4>Digitecpharma: dashboards on Metabase
-                            <p class="dates">December 2021 to February 2022</p>
-                        </h4>
-						<!--<p class="description"> From a PostgreSQL Database, I use SQL querys to display multiple dashboards on Metabase.</p>-->
-                        <a href="tableau_project.html">
-                            <img src="images/digitecpharma_logo.png" alt="Tableau Project" />
-                        </a>
-						
-					</div>
-					<div class="project">
-						<h4>ManoMano: raise customer's engagement
-                            <p class="dates">January 2021</p>
-                        </h4>
-						<!--<p class="description">Using Python, Pandas and the Text2Emotion Python Library, we identified customers feeling and made suggestions to improve customer's engagement.</p>-->
-                        <a href="tableau_project.html">
-                            <img src="images/manomano_logo.png" alt="Tableau Project" />
-                        </a>
-						
-					</div>
-                    <div class="project">
-						<h4>Data Analyst training (Python, Pandas...)
-                            <p class="dates">September 2021 to February 2022</p>
-                        </h4>
-						<!--<p class="description">Dozens of lessons provided by the Wild Code School.</p>-->
-                        <a href="tableau_project.html">
-                            <img src="images/wildcodeschool_logo.png" alt="Tableau Project" />
-                        </a>
-					</div>					
 
+					<!--Card 1-->
+                        <div class = "project" onclick="window.open('tableau_project.html','mywindow');" style="cursor: pointer;">
+                            <div class = "card_title">
+                                <h4>Mockup Dashboard on Tableau</h4>
+                            </div>
+                            <div class = "card_description">
+                                <p>This was my first data project. I used SQL to query data from a "Toys and models" 
+                                    database to realize a dashboard with Tableau software.</p>
+                            </div>
+					</div>
+
+                    <!--Card 2-->
+					<div class = "project" onclick="window.open('tableau_project.html','mywindow');" style="cursor: pointer;">
+						<div class = "card_title">
+                            <h4>Movie recommendation system</h4>
+                        </div>
+                        <div class = "card_description">
+                        <p>With the IMDb database, I used Python and Pandas to clear the database. Then Sickit-learn for Machine Learning. I developped a webapp with the Streamlit Python Library to display the recommendations.</p>
+                        </div>
+					</div>
+
+                    <!--Card 3-->
+                    <div class = "project" onclick="window.open('tableau_project.html','mywindow');" style="cursor: pointer;">
+						<div class = "card_title">
+                            <h4>Determine music track popularity</h4>
+                        </div>
+                        <div class = "card_description">
+                        <p>With the Spotify database, Python, Pandas, Sickit-learn I made a webapp on streamlit where people can tweak a music track characteristics to find out the influence on potential popularity.</p>
+                        </div>
+					</div>
+
+
+                    <!--Card 4-->
+                    <div class = "project" onclick="window.open('tableau_project.html','mywindow');" style="cursor: pointer;">
+						<div class = "card_title">
+                            <h4>Digitecpharma: dashboards on Metabase</h4>
+                        </div>
+                        <div class = "card_description">
+                        <p>From a PostgreSQL Database, I use SQL querys to display multiple dashboards on Metabase.</p>
+                        </div>
+					</div>
+
+
+
+                    <!--Card 5-->
+                    <div class = "project" onclick="window.open('tableau_project.html','mywindow');" style="cursor: pointer;">
+						<div class = "card_title">
+                            <h4>ManoMano: raise customer's engagement</h4>
+                        </div>
+                        <div class = "card_description">
+                        <p>Using Python, Pandas and the Text2Emotion Python Library, we identified customers feeling and made suggestions to improve customer's engagement.</p>
+                        </div>
+					</div>
+
+                    <!--Card 6-->
+                    <div class = "project" onclick="window.open('tableau_project.html','mywindow');" style="cursor: pointer;">
+						<div class = "card_title">
+                            <h4>Data Analyst training (Python, Pandas...)</h4>
+                        </div>
+                        <div class = "card_description">
+                        <p>Dozens of lessons provided by the Wild Code School.</p>
+                        </div>
+					</div>
 				</div>
 
 
                 <h2>Jedha Bootcamp: 5 months Data Engineer training</h2>
+                <p class="dates">February 2022 to July 2022</p>
 
 
-                <div class="project">
-                    <h4>Wait and see
-                        <p class="dates">February 2022 to July 2022</p>
-                    </h4>
-                    <!--<p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Molestias sunt, atque aliquid pariatur.</p>-->
-                        <a href="tableau_project.html">
-                            <img src="images/Jedha_logo.png" alt="Tableau Project" />
-                        </a>
+                <div class="projects">
+                <!--Card 1-->
+                <div class = "project" onclick="window.open('tableau_project.html','mywindow');" style="cursor: pointer;">
+                    <div class = "card_title">
+                        <h4>Future project</h4>
+                    </div>
+                    <div class = "card_description">
+                    <p>Wait and see</p>
+                    </div>
+                </div>
+
+                <!--Card 2-->
+                <div class = "project" onclick="window.open('tableau_project.html','mywindow');" style="cursor: pointer;">
+                    <div class = "card_title">
+                        <h4>Future project</h4>
+                    </div>
+                    <div class = "card_description">
+                    <p>Wait and see</p>
+                    </div>
+                </div>
+
+                <!--Card 3-->
+                <div class = "project" onclick="window.open('tableau_project.html','mywindow');" style="cursor: pointer;">
+                    <div class = "card_title">
+                        <h4>Future project</h4>
+                    </div>
+                    <div class = "card_description">
+                    <p>Wait and see</p>
+                    </div>
                 </div>
 
 
-
-                
-                
+                </div>
 			</section>
 		</section>
 	</body>
