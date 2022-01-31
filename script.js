@@ -1,72 +1,248 @@
-/*
-document.write(
-<section class="projects-section">
-                <p id="my_projects"></p>
-				<h1>Projects</h1>
-                <h2>At Wild Code School - 5 months Data Analyst training</h2>
-				<div class="projects">
-					<div class="project">
-						<h4>Mockup Dashboard on Tableau</h4>
-                        <a href="tableau_project.html">
-                            <img src="images/tableau_logo.png" alt="Tableau Project" />
-                        </a>
-						<p class="dates">September 2021</p>
-					</div>
-					<div class="project">
-						<h4>Movie recommendation system</h4>
-						<p class="description">
-							With the IMDb database, I used Python and Pandas to clear the database. Then Sickit-learn for Machine Learning. I developped a webapp with the Streamlit Python Library to display the recommendations.
-						</p>
-						<p class="dates">October to November 2021</p>
-					</div>
-					<div class="project">
-						<h4>Hackaton: determine a music track popularity.</h4>
-						<p class="description">
-							With the Spotify database, Python, Pandas, Sickit-learn I made a webapp on streamlit where people can tweak a music track characteristics to find out the influence on potential popularity.
-						</p>
-						<p class="dates">November 2021</p>
-					</div>
-					<div class="project">
-						<h4>Dashboards for Digitecpharma: a company building website and applications for pharmacies</h4>
-						<p class="description">
-							From a PostgreSQL Database, I use SQL querys to display multiple dashboards on Metabase.
-						</p>
-						<p class="dates">December 2021 to February 2022</p>
-					</div>
-					<div class="project">
-						<h4>Hackaton: Find pain points to customer engagements for ManoMano</h4>
-						<p class="description">
-							Using Python, Pandas and the Text2Emotion Python Library, we identified customers feeling and made suggestions to improve customer's engagement.
-						</p>
-						<p class="dates">January 2021</p>
-					</div>
-                    <div class="project">
-						<h4>Data Analyst lessons</h4>
-						<p class="description">
-							Dozens of lessons provided by the Wild Code School.
-						</p>
-						<p class="dates">September 2021 to February 2022</p>
-					</div>					
 
-				</div>
+/**
+ * Gulp Packages
+ */
+
+// General
+var gulp = require('gulp');
+var fs = require('fs');
+var del = require('del');
+var lazypipe = require('lazypipe');
+var plumber = require('gulp-plumber');
+var flatten = require('gulp-flatten');
+var tap = require('gulp-tap');
+var rename = require('gulp-rename');
+var header = require('gulp-header');
+var footer = require('gulp-footer');
+var watch = require('gulp-watch');
+var livereload = require('gulp-livereload');
+var package = require('./package.json');
+
+// Scripts
+var jshint = require('gulp-jshint');
+var stylish = require('jshint-stylish');
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
+var optimizejs = require('gulp-optimize-js');
+
+// Styles
+var sass = require('gulp-sass');
+var prefix = require('gulp-autoprefixer');
+var minify = require('gulp-cssnano');
+
+// Docs
+var markdown = require('gulp-markdown');
+var fileinclude = require('gulp-file-include');
 
 
-                <h2>At Jedha Bootcamp</h2>
-                <div class="project">
-                    <h4>Algorithme de reconnaissance d'objet</h4>
-                    <p class="description">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Molestias sunt, atque aliquid pariatur.
-                    </p>
-                    <p class="dates">Dates 2020 - 2021</p>
-                </div>
-			</section>
-			
+/**
+ * Paths to project folders
+ */
 
-			
+var paths = {
+	input: 'src/**/*',
+	output: 'dist/',
+	scripts: {
+		input: 'src/js/*',
+		output: 'dist/js/'
+	},
+	styles: {
+		input: 'src/sass/**/*.{scss,sass}',
+		output: 'dist/css/'
+	},
+	images: {
+		input: 'src/img/*',
+		output: 'dist/img/'
+	},
+	docs: {
+		input: 'src/docs/*.{html,md,markdown}',
+		output: 'docs/',
+		templates: 'src/docs/_templates/',
+		assets: 'src/docs/assets/**'
+	}
+};
 
-			); 
+
+/**
+ * Template for banner to add to file headers
+ */
+
+var banner = {
+	full :
+		'/*!\n' +
+		' * <%= package.name %> v<%= package.version %>: <%= package.description %>\n' +
+		' * (c) ' + new Date().getFullYear() + ' <%= package.author.name %>\n' +
+		' * MIT License\n' +
+		' * <%= package.repository.url %>\n' +
+		' */\n\n',
+	min :
+		'/*!' +
+		' <%= package.name %> v<%= package.version %>' +
+		' | (c) ' + new Date().getFullYear() + ' <%= package.author.name %>' +
+		' | MIT License' +
+		' | <%= package.repository.url %>' +
+		' */\n'
+};
 
 
-			
-			*/
+/**
+ * Gulp Tasks
+ */
+
+// Lint, minify, and concatenate scripts
+gulp.task('build:scripts', ['clean:dist'], function() {
+	var jsTasks = lazypipe()
+		.pipe(header, banner.full, { package : package })
+		.pipe(optimizejs)
+		.pipe(gulp.dest, paths.scripts.output)
+		.pipe(rename, { suffix: '.min' })
+		.pipe(uglify)
+		.pipe(optimizejs)
+		.pipe(header, banner.min, { package : package })
+		.pipe(gulp.dest, paths.scripts.output);
+
+	return gulp.src(paths.scripts.input)
+		.pipe(plumber())
+		.pipe(tap(function (file, t) {
+			if ( file.isDirectory() ) {
+				var name = file.relative + '.js';
+				return gulp.src(file.path + '/*.js')
+					.pipe(concat(name))
+					.pipe(jsTasks());
+			}
+		}))
+		.pipe(jsTasks());
+});
+
+// Process, lint, and minify Sass files
+gulp.task('build:styles', ['clean:dist'], function() {
+	return gulp.src(paths.styles.input)
+		.pipe(plumber())
+		.pipe(sass({
+			outputStyle: 'expanded',
+			sourceComments: true
+		}))
+		.pipe(flatten())
+		.pipe(prefix({
+			browsers: ['last 2 version', '> 1%'],
+			cascade: true,
+			remove: true
+		}))
+		.pipe(header(banner.full, { package : package }))
+		.pipe(gulp.dest(paths.styles.output))
+		.pipe(rename({ suffix: '.min' }))
+		.pipe(minify({
+			discardComments: {
+				removeAll: true
+			}
+		}))
+		.pipe(header(banner.min, { package : package }))
+		.pipe(gulp.dest(paths.styles.output));
+});
+
+// Copy image files into output folder
+gulp.task('build:images', ['clean:dist'], function() {
+	return gulp.src(paths.images.input)
+		.pipe(plumber())
+		.pipe(gulp.dest(paths.images.output));
+});
+
+// Lint scripts
+gulp.task('lint:scripts', function () {
+	return gulp.src(paths.scripts.input)
+		.pipe(plumber())
+		.pipe(jshint())
+		.pipe(jshint.reporter('jshint-stylish'));
+});
+
+// Remove pre-existing content from output folder
+gulp.task('clean:dist', function () {
+	del.sync([
+		paths.output
+	]);
+});
+
+// Generate documentation
+gulp.task('build:docs', ['compile', 'clean:docs'], function() {
+	return gulp.src(paths.docs.input)
+		.pipe(plumber())
+		.pipe(fileinclude({
+			prefix: '@@',
+			basepath: '@file'
+		}))
+		.pipe(tap(function (file, t) {
+			if ( /\.md|\.markdown/.test(file.path) ) {
+				return t.through(markdown);
+			}
+		}))
+		.pipe(header(fs.readFileSync(paths.docs.templates + '/_header.html', 'utf8')))
+		.pipe(footer(fs.readFileSync(paths.docs.templates + '/_footer.html', 'utf8')))
+		.pipe(gulp.dest(paths.docs.output));
+});
+
+// Copy distribution files to docs
+gulp.task('copy:dist', ['compile', 'clean:docs'], function() {
+	return gulp.src(paths.output + '/**')
+		.pipe(plumber())
+		.pipe(gulp.dest(paths.docs.output + '/dist'));
+});
+
+// Copy documentation assets to docs
+gulp.task('copy:assets', ['clean:docs'], function() {
+	return gulp.src(paths.docs.assets)
+		.pipe(plumber())
+		.pipe(gulp.dest(paths.docs.output + '/assets'));
+});
+
+// Remove prexisting content from docs folder
+gulp.task('clean:docs', function () {
+	return del.sync(paths.docs.output);
+});
+
+// Spin up livereload server and listen for file changes
+gulp.task('listen', function () {
+	livereload.listen();
+	gulp.watch(paths.input).on('change', function(file) {
+		gulp.start('default');
+		gulp.start('refresh');
+	});
+});
+
+// Run livereload after file change
+gulp.task('refresh', ['compile', 'docs'], function () {
+	livereload.changed();
+});
+
+
+/**
+ * Task Runners
+ */
+
+// Compile files
+gulp.task('compile', [
+	'lint:scripts',
+	'clean:dist',
+	'build:scripts',
+	'build:styles',
+	'build:images'
+]);
+
+// Generate documentation
+gulp.task('docs', [
+	'clean:docs',
+	'build:docs',
+	'copy:dist',
+	'copy:assets'
+]);
+
+// Compile files and generate docs (default)
+gulp.task('default', [
+	'compile',
+	'docs'
+]);
+
+// Compile files and generate docs when something changes
+gulp.task('watch', [
+	'listen',
+	'default'
+]);
