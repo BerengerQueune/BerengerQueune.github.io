@@ -19,16 +19,12 @@ img {
 }
 
 /* this is used to change the display of hyperlink. 'text-decoration: none' kept showing a small bar at the bottom so I changed color to white to solve this issue */
-nav a:visited { text-decoration: underline dotted white; color:black; }
-nav a:hover { text-decoration: underline dotted white; color:black; }
-nav a:focus { text-decoration: underline dotted white; color:black; }
-nav a:hover, a:active { text-decoration: underline dotted white; color:black; }
-nav a:link { text-decoration: underline dotted white; color:black; }
 
-
-
-
-
+nav a:visited {text-decoration: underline dotted white; color:black;}
+nav a:hover {text-decoration: underline dotted white; color:black;}
+nav a:focus {text-decoration: underline dotted white; color:black;}
+nav a:hover, a:active {text-decoration: underline dotted white; color:black;}
+nav a:link {text-decoration: underline dotted white; color:black;}
 
 body {
 	font-family: 'Noto Sans JP', sans-serif;
