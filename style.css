@@ -180,7 +180,7 @@ nav ul li:hover {
 
 .page-content {
 	background-color: #ffffff;
-	padding: 0 2%;
+	padding: 0 20%;
 	
 }
 
@@ -204,12 +204,14 @@ nav ul li:hover {
 
 .page-content .projects-section .project {
 	
-	width: 14%;
-	margin: 0 auto;
+	width: 200px;
 	border: 1px solid #000000;
 	background-color: #A7D9C9;
 	height: 300px;
 	border-radius: 5%;
+	margin: 0 auto;
+	padding: 10px;
+	margin-bottom: 20px;
 	
 }
 
