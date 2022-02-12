@@ -30,6 +30,74 @@ body {
 	font-family: 'Noto Sans JP', sans-serif;
 }
 
+
+/* Colors */
+/* Colors */
+/* Colors */
+/* Colors */
+/* Colors */
+
+nav ul li:hover {
+	border-bottom: 3px solid #8AAAE5;
+}  
+
+.presentation_area {
+	background-color: #8AAAE5;
+}
+
+nav {
+	background-color: #ffffff;
+}
+
+.page-content {
+	background-color: #ffffff;
+}
+
+.page-content .projects-section .project {
+	border: 1px solid #000000;
+	background-color: #A7D9C9;
+}
+
+.page-content .projects-section .project .card_title {
+	background-color: #8AAAE5;
+}
+
+.page-content .projects-section .project h4 {
+	color:white;
+}
+
+.page-content .dates {
+	color: rgb(145, 145, 145);
+}
+
+.page-content .projects-section .project .card_description {
+	background-color: #DFEFF0;
+}
+
+.project_area {
+	background-color: #8AAAE5;
+}
+
+.project_area p .highlightme{
+	color:#AD235E;
+}
+
+.project_area p a:visited { text-decoration:none; color:#ECECEC ; font-weight:bold; }
+.project_area p a:hover { text-decoration: none; color:#ECECEC ; font-weight:bold; }
+.project_area p a:focus { text-decoration: none; color:#ECECEC ; font-weight:bold; }
+.project_area p a:hover, a:active { text-decoration: none; color:#ECECEC ; font-weight:bold; }
+.project_area p a:link { text-decoration: none; color:#ECECEC ; font-weight:bold; }
+
+footer {
+	background-color: #8AAAE5;
+}
+/* Colors */
+/* Colors */
+/* Colors */
+/* Colors */
+/* Colors */
+
+
 /* Navigation Bar */
 /* Navigation Bar */
 /* Navigation Bar */
@@ -42,7 +110,6 @@ nav {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #ffffff;
 	position: sticky;
 	z-index: 1;
 	top: 0;
@@ -81,7 +148,6 @@ nav ul li {
 
 
 nav ul li:hover {
-	border-bottom: 3px solid #A7D9C9;
 	margin-bottom: -3px;
 }  
 
@@ -106,7 +172,6 @@ nav ul li:hover {
 
 .presentation_area {
 
-	background-color: #F6F7FB;
 	width: 100%;
 	height: 700px;
 	
@@ -179,7 +244,6 @@ nav ul li:hover {
 /* page-content section */
 
 .page-content {
-	background-color: #ffffff;
 	padding: 0 20%;
 	
 }
@@ -204,13 +268,10 @@ nav ul li:hover {
 
 .page-content .projects-section .project {
 	
-	width: 200px;
-	border: 1px solid #000000;
-	background-color: #A7D9C9;
+	width: 220px;
 	height: 300px;
 	border-radius: 5%;
 	margin: 0 auto;
-	padding: 10px;
 	margin-bottom: 20px;
 	
 }
@@ -218,7 +279,6 @@ nav ul li:hover {
 
 
 .page-content .projects-section .project h4 {
-	color:white;
 	text-align: center;
 	position: absolute;
 	top: 50%;
@@ -229,14 +289,12 @@ nav ul li:hover {
 
 .page-content .dates {
 	font-size: 20px;
-	color: rgb(145, 145, 145);
 	text-align: center;
 	margin-bottom: 30px;
 }
 
 .page-content .projects-section .project .card_title {
 	width: 100%;
-	background-color: #A7D9C9;
 	border-radius: 5%;
 	height: 100%;
 	position:relative;
@@ -251,7 +309,6 @@ nav ul li:hover {
 .page-content .projects-section .project .card_description {
 	width: 100%;
 	text-align: center;
-	background-color: #F6F7FB;
 	border-radius: 5%;
 	height: 100%;
 	position:relative;
@@ -292,7 +349,6 @@ nav ul li:hover {
 
 footer {
 	margin-top: 100px;
-	background-color: #F6F7FB;
 	width:100%;
 	height: 100px;
 }
@@ -350,7 +406,6 @@ footer {
 
 .project_area {
 
-	background-color: #F6F7FB;
 	width: 100%;
 	height: 700px;
 	
@@ -373,8 +428,6 @@ footer {
 }
 
 .project_area p .highlightme{
-
-	color:#ca2a75;
 	font-weight:bold;
 }
 
@@ -382,11 +435,7 @@ footer {
 
 
 
-.project_area p a:visited { text-decoration:none; color:#50b494; font-weight:bold; }
-.project_area p a:hover { text-decoration: none; color:#50b494; font-weight:bold; }
-.project_area p a:focus { text-decoration: none; color:#50b494; font-weight:bold; }
-.project_area p a:hover, a:active { text-decoration: none; color:#50b494; font-weight:bold; }
-.project_area p a:link { text-decoration: none; color:#50b494; font-weight:bold; }
+
 
 /* project_area div */
 /* project_area div */
