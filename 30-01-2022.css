@@ -1,36 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Oswald:wght@300&display=swap');
 
-
 * {
 	margin: 0;
 	padding: 0;
-  }
-
-
-.presentation {
-
-	background-color: rgb(196, 230, 225);
-	width: 100%;
-	height: 800px;
 }
 
-.presentation h1{
-	line-height: 300px;
-	height: 200px;
-	text-align: center;
-}
-
-.presentation img{
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-	margin-left: 30%;
-	position:relative;
-}
-
-html {
+  html {
 	scroll-behavior: smooth;
-  }
+}
 
 img {
 	border: 0;
@@ -39,28 +16,93 @@ img {
 	height: auto;
 	width: auto;
 	width: auto\9;
-  }
-
-/* this is used to change the display of hyperlink. 'text-decoration: none' kept showing a small bar at the bottom so I changed color to white to solve this issue */
-a:visited { text-decoration: underline dotted white; color:black; }
-a:hover { text-decoration: underline dotted white; color:black; }
-a:focus { text-decoration: underline dotted white; color:black; }
-a:hover, a:active { text-decoration: underline dotted white; color:black; }
-a:link { text-decoration: underline dotted white; color:black; }
-
-h4 {
-	text-align: center;
-
-
 }
 
+/* this is used to change the display of hyperlink. 'text-decoration: none' kept showing a small bar at the bottom so I changed color to white to solve this issue */
 
-
+nav a:visited {text-decoration: underline dotted white; color:black;}
+nav a:hover {text-decoration: underline dotted white; color:black;}
+nav a:focus {text-decoration: underline dotted white; color:black;}
+nav a:hover, a:active {text-decoration: underline dotted white; color:black;}
+nav a:link {text-decoration: underline dotted white; color:black;}
 
 body {
 	font-family: 'Noto Sans JP', sans-serif;
-
 }
+
+
+/* Colors */
+/* Colors */
+/* Colors */
+/* Colors */
+/* Colors */
+
+nav ul li:hover {
+	border-bottom: 3px solid #8AAAE5;
+}  
+
+.presentation_area {
+	background-color: #8AAAE5;
+}
+
+nav {
+	background-color: #ffffff;
+}
+
+.page-content {
+	background-color: #ffffff;
+}
+
+.page-content .projects-section .project {
+	border: 1px solid #000000;
+	background-color: #A7D9C9;
+}
+
+.page-content .projects-section .project .card_title {
+	background-color: #8AAAE5;
+}
+
+.page-content .projects-section .project h4 {
+	color:white;
+}
+
+.page-content .dates {
+	color: rgb(145, 145, 145);
+}
+
+.page-content .projects-section .project .card_description {
+	background-color: #DFEFF0;
+}
+
+.project_area {
+	background-color: #8AAAE5;
+}
+
+.project_area p .highlightme{
+	color:#AD235E;
+}
+
+.project_area p a:visited { text-decoration:none; color:#ECECEC ; font-weight:bold; }
+.project_area p a:hover { text-decoration: none; color:#ECECEC ; font-weight:bold; }
+.project_area p a:focus { text-decoration: none; color:#ECECEC ; font-weight:bold; }
+.project_area p a:hover, a:active { text-decoration: none; color:#ECECEC ; font-weight:bold; }
+.project_area p a:link { text-decoration: none; color:#ECECEC ; font-weight:bold; }
+
+footer {
+	background-color: #8AAAE5;
+}
+/* Colors */
+/* Colors */
+/* Colors */
+/* Colors */
+/* Colors */
+
+
+/* Navigation Bar */
+/* Navigation Bar */
+/* Navigation Bar */
+/* Navigation Bar */
+/* Navigation Bar */
 
 nav {
 	padding: 0 2%;
@@ -68,166 +110,254 @@ nav {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	background-color: white;
 	position: sticky;
 	z-index: 1;
 	top: 0;
+	height: 60px;
 }
+
+nav img {
+	width: 42px;
+	height: 42px;
+    margin-top: 5px;   
+	border-bottom: 0px solid #A7D9C9;
+}
+
+nav img:hover {
+	opacity: 0,3;
+}
+
 nav .profile {
 	display: flex;
 	align-items: center;
 }
-nav .profile img {
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-}
+
 nav .profile h1 {
-	margin-left: 10px;
-	font-size: 15px;
+	font-size: 20px;
 }
+
 nav ul {
 	display: flex;
 	list-style-type: none;
-    align-items: center;
-    
+    align-items: center;  
 }
 nav ul li {
 	margin-left: 20px;
 	cursor: pointer;
-	border-bottom: 1px solid #fff;
-
 }
 
-nav ul li img{
-	width: 40px;
-	height: 40px;
-    margin-top: 5px;
-    
-    
-}
 
 nav ul li:hover {
-	border-bottom-color: #000;
-}
-
-.page-content {
-	margin: 4%;
-}
-.page-content header {
-	margin-top: 5%;
-	max-width: 80%;
-}
-.page-content header h1 {
-	margin: 0;
-	text-transform: uppercase;
-	font-family: 'Oswald', sans-serif;
-	font-size: 6vw;
-    color: rgb(194, 33, 33);
-}
-
-.presentation-image {
-	position: relative;
-	text-align: center;
-	color: white;
-  }
-
-/*TEST de changement de CSS sur text sur l'image */
-.presentation-image header h1 {
-	color: rgb(255, 255, 255);
-	position: absolute;
-	top: 8px;
-	left: 16px;
-}
+	margin-bottom: -3px;
+}  
 
 
-.page-content header p {
-	line-height: 30px;
-	color: #ffffff;
-	position: absolute;
-	top: 140px;
-	left: 20px;
-	text-align: left;
-}
-.page-content header button {
-	background-color: inherit;
-	border: none;
-	outline: none;
-	padding: 0;
-	font-size: 15px;
-	font-weight: bold;
-	padding-bottom: 5px;
-	border-bottom: 1px solid #ccc;
-	cursor: pointer;
-}
-.page-content header button:hover {
-	color: #ccc;
-	border-bottom-color: #000;
-}
-.page-content .presentation-image {
-	margin-top: 5%;
-}
-.page-content .presentation-image img {
-	max-width: 100%;
-	height: auto;
+/* Navigation Bar */
+/* Navigation Bar */
+/* Navigation Bar */
+/* Navigation Bar */
+/* Navigation Bar */
+
+
+
+
+
+
+
+/* presentation_area div */
+/* presentation_area div */
+/* presentation_area div */
+/* presentation_area div */
+/* presentation_area div */
+
+.presentation_area {
+
+	width: 100%;
+	height: 700px;
+	
 }
 
-.page-content .projects-section {
-	margin-top: 6%;
-}
-.page-content .projects-section h1 {
+.presentation_area h1{
+	line-height: 300px;
+	height: 200px;
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
 	font-size: 3vw;
+	text-align: center;
 }
+
+/* box div */
+/* box div */
+/* box div */
+/* box div */
+/* box div */
+
+.presentation_area .box{
+
+	width: 40%;
+	height: 400px;
+	position:relative;
+    margin: 0 auto;
+}
+
+.presentation_area .box img{
+	width: 310px;
+	height: 310px;
+	margin-top: 50px;
+	float:left;
+	border-radius: 5%;
+	border: 0px solid #A7D9C9;
+}
+
+.presentation_area .box p{
+
+	width: 200px;
+	margin-top: 50px;
+	float: right;
+	margin-right: 100px;
+}
+
+.presentation_area .box a img:hover {
+	opacity: 0.3;
+}
+
+
+
+/* box div */
+/* box div */
+/* box div */
+/* box div */
+/* box div */
+
+/* presentation_area div */
+/* presentation_area div */
+/* presentation_area div */
+/* presentation_area div */
+/* presentation_area div */
+
+
+
+/* page-content section */
+/* page-content section */
+/* page-content section */
+/* page-content section */
+/* page-content section */
+
+.page-content {
+	padding: 0 20%;
+	
+}
+
+.page-content h1 {
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 3vw;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.page-content h2 {
+	text-align: center;
+	margin-top: 50px;
+}
+
 .page-content .projects-section .projects {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: wrap;	
 }
+
 .page-content .projects-section .project {
-	margin-right: 20px;
-	max-width: 14%;
-
-
+	
+	width: 220px;
+	height: 300px;
+	border-radius: 5%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	
 }
 
-/* attempt to adapt an image on projects */
-.page-content .projects-section .project img {
-	position: relative;
-	text-align: center;
-	width: 100%;
-	height: 200px;
-    margin-top: 5px;
-}
+
 
 .page-content .projects-section .project h4 {
-	margin: 0;
-}
-.page-content .projects-section .project .description {
-	font-size: 15px;
-}
-.page-content .projects-section .project .dates {
-	font-size: 13px;
-	color: rgb(145, 145, 145);
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	padding: 0 4%;
 }
 
+.page-content .dates {
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.page-content .projects-section .project .card_title {
+	width: 100%;
+	border-radius: 5%;
+	height: 100%;
+	position:relative;
+	
+}
+
+.page-content .projects-section .project .card_title:hover {
+	opacity: 0;
+	transition: 0.7s;
+}
+
+.page-content .projects-section .project .card_description {
+	width: 100%;
+	text-align: center;
+	border-radius: 5%;
+	height: 100%;
+	position:relative;
+	margin-top: -300px;
+	opacity:0;
+}
+
+.page-content .projects-section .project .card_description:hover {
+	opacity:1;
+	transition: 0.7s;
+}
+
+.page-content .projects-section .project .card_description p {
+	color:black;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	padding: 0 4%;
+
+}
+
+
+/* page-content section */
+/* page-content section */
+/* page-content section */
+/* page-content section */
+/* page-content section */
+
+
+
+/* footer */
+/* footer */
+/* footer */
+/* footer */
+/* footer */
+
 footer {
-	margin-top: 5%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	padding: 10px;
-	background-color: rgb(255, 255, 255);
-	color: white;
+	margin-top: 100px;
+	width:100%;
+	height: 100px;
 }
-footer .colonne p {
-	font-size: 12px;
-	color: #ccc;
-	cursor: pointer;
-}
-footer .colonne p:hover {
-	color: #fff;
-}
+
+/* footer */
+/* footer */
+/* footer */
+/* footer */
+/* footer */
 
 @media screen and (max-width: 700px) {
 	nav {
@@ -265,6 +395,53 @@ footer .colonne p:hover {
 
 
 
+
+
+
+/* project_area div */
+/* project_area div */
+/* project_area div */
+/* project_area div */
+/* project_area div */
+
+.project_area {
+
+	width: 100%;
+	height: 700px;
+	
+}
+
+.project_area h1 {
+	line-height: 300px;
+	height: 200px;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-size: 3vw;
+	text-align: center;
+}
+
+.project_area .box{
+
+	width: 60%;
+	position:relative;
+    margin: 0 auto;
+}
+
+.project_area p .highlightme{
+	font-weight:bold;
+}
+
+
+
+
+
+
+
+/* project_area div */
+/* project_area div */
+/* project_area div */
+/* project_area div */
+/* project_area div */
 
 
 

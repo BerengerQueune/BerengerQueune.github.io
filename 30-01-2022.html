@@ -5,16 +5,16 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="30-01-2022.css" />
+		<link rel="stylesheet" href="style.css" />
         
 
 		<title>
-			Mon portfolio
+			Bérenger - Data Analyst
 		</title>
 	</head>
 
 
-	<body>
+<body>
 
 		
 <!--Navigation Bar-->
@@ -24,23 +24,23 @@
 <!--Navigation Bar-->
 
 	
-		<nav>
-			<div class="profile">
-				<img src="images/image_profile.jpeg" alt="profile photo" />
-				<h1><a href="index.html">Bérenger Queune</a></h1>
-			</div>
-			<ul>
-                <a href="https://www.linkedin.com/in/b%C3%A9renger-queune/">
-				    <li><img src="images/LinkedIn_logo_initials.png" alt="Linkedin Profile" /></li>
-                </a>
-                <a href="https://github.com/BerengerQueune">
-				    <li><img src="images/github_logo.png" alt="Github Profile" /></li>
-                </a>
-                <li>Resume</li>
-                <li><a href="#my_projects">Projects</a></li>
-                <li><a href="about.html" title="About Me">About Me</a></li>
-			</ul>
-		</nav>
+    <nav>
+        <div class="profile">
+            <h1><a href="index.html">Home</a></h1>
+        </div>
+
+        <ul>
+            <li><a href="https://www.linkedin.com/in/b%C3%A9renger-queune/">
+                <img src="images/LinkedIn_logo_initials.png" alt="Linkedin Profile" />
+            </a></li>
+            <li><a href="https://github.com/BerengerQueune">
+                <img src="images/github_logo.png" alt="Github Profile" />
+            </a></li>
+            <li><a href="#about_me">About me</a></li>
+            <li><a href="#my_projects">Portfolio</a></li>
+            
+        </ul>
+    </nav>
 
 <!--Navigation Bar-->
 <!--Navigation Bar-->
@@ -50,130 +50,154 @@
 
 
 
+<!--Presentation div-->
+<!--Presentation div-->
+<!--Presentation div-->
+<!--Presentation div-->
+<!--Presentation div-->
+
+<div class="presentation_area">
+    <p id="about_me"></p>
+	<h1>Hi, I'm Bérenger</h1>
+    <div class="box">
+        <img src="images/current_best.png" alt="profile photo" />
+
+        <p><br><br>
+            I am a student Data Analyst currently learning 
+            at the Wild Code School.
+            <br><br>
+            I will start a 5 months Data Engineer training at Jedha Bootcamp in February.
+        </p>
+
+
+    </div>
+
+</div>
+
+<!--Presentation div-->
+<!--Presentation div-->
+<!--Presentation div-->
+<!--Presentation div-->
+<!--Presentation div-->
+
+
+
+<!--Project area div-->
+<!--Project area div-->
+<!--Project area div-->
+<!--Project area div-->
+<!--Project area div-->
+<p id="my_projects"></p>
 		<section class="page-content">
 
-
-			<div class="presentation-image">
-                <img src="images/background_computer.jpg" alt="AI image" />
-                    <header>
-                        <h1>Hi, I'm Bérenger</h1>
-                        <p>
-                            After 15+ years working in Customer Services I had the opportunity to reshape my career and I decided to go on the Data path.
-                        </p>
-                    </header>
-            </div>
-
-
-
-
+            
 			<section class="projects-section">
-                <p id="my_projects"></p>
+                
 				<h1>Projects</h1>
                 <h2>Wild Code School: 5 months Data Analyst training</h2>
+                <p class="dates">September 2021 to February 2022</p>
 				<div class="projects">
-					<div class="project">
-						<h4>Mockup Dashboard on Tableau
-                            <p class="dates">September 2021</p>
-                        </h4>
-                        <a href="tableau_project.html">
-                            <img src="images/tableau_logo.png" alt="Tableau Project" />
-                        </a>
+
+					<!--Card 1-->
+                        <div class = "project" onclick="window.open('tableau_project.html','mywindow');" style="cursor: pointer;">
+                            <div class = "card_title">
+                                <h4>Mockup project: Dashboard on Tableau from SQL Query</h4>
+                            </div>
+                            <div class = "card_description">
+                                <p>This was my first data project. I used SQL to query data from a "Toys and models" 
+                                    database to realize a dashboard with Tableau software.</p>
+                            </div>
 					</div>
-					<div class="project">
-						<h4>Movie recommendation system
-                            <p class="dates">October to November 2021</p>
-                        </h4>
-						<!--<p class="description">With the IMDb database, I used Python and Pandas to clear the database. Then Sickit-learn for Machine Learning. I developped a webapp with the Streamlit Python Library to display the recommendations.</p>-->
-                        <a href="tableau_project.html">
-                            <img src="images/IMDb_logo.png" alt="Tableau Project" />
-                        </a>
+
+                    <!--Card 2-->
+					<div class = "project" onclick="window.open('movie_recommendation_project.html','mywindow');" style="cursor: pointer;">
+						<div class = "card_title">
+                            <h4>Movie recommendation system</h4>
+                        </div>
+                        <div class = "card_description">
+                        <p>With the IMDb database, I used Python and Pandas to clear the database. Then Sickit-learn for Machine Learning. I developped a webapp with the Streamlit Python Library to display the recommendations.</p>
+                        </div>
 					</div>
-					<div class="project">
-						<h4>Determine music track popularity
-                            <p class="dates">November 2021</p>
-                        </h4>
-						<!--<p class="description">With the Spotify database, Python, Pandas, Sickit-learn I made a webapp on streamlit where people can tweak a music track characteristics to find out the influence on potential popularity.</p>-->
-                        <a href="tableau_project.html">
-                            <img src="images/spotify_logo.png" alt="Tableau Project" />
-                        </a>
-						
+
+                    <!--Card 3-->
+                    <div class = "project" onclick="window.open('music_project.html','mywindow');" style="cursor: pointer;">
+						<div class = "card_title">
+                            <h4>Determine music track popularity</h4>
+                        </div>
+                        <div class = "card_description">
+                        <p>With the Spotify database, Python, Pandas, Sickit-learn I made a webapp on streamlit where people can tweak a music track characteristics to find out the influence on potential popularity.</p>
+                        </div>
 					</div>
-					<div class="project">
-						<h4>Digitecpharma: dashboards on Metabase
-                            <p class="dates">December 2021 to February 2022</p>
-                        </h4>
-						<!--<p class="description"> From a PostgreSQL Database, I use SQL querys to display multiple dashboards on Metabase.</p>-->
-                        <a href="tableau_project.html">
-                            <img src="images/digitecpharma_logo.png" alt="Tableau Project" />
-                        </a>
-						
+
+
+                    <!--Card 4-->
+                    <div class = "project" onclick="window.open('digitecpharma_project.html','mywindow');" style="cursor: pointer;">
+						<div class = "card_title">
+                            <h4>Digitecpharma: dashboards on Metabase</h4>
+                        </div>
+                        <div class = "card_description">
+                        <p>From a PostgreSQL Database, I use SQL querys to display multiple dashboards on Metabase.</p>
+                        </div>
 					</div>
-					<div class="project">
-						<h4>ManoMano: raise customer's engagement
-                            <p class="dates">January 2021</p>
-                        </h4>
-						<!--<p class="description">Using Python, Pandas and the Text2Emotion Python Library, we identified customers feeling and made suggestions to improve customer's engagement.</p>-->
-                        <a href="tableau_project.html">
-                            <img src="images/manomano_logo.png" alt="Tableau Project" />
-                        </a>
-						
-					</div>
-                    <div class="project">
-						<h4>Data Analyst training (Python, Pandas...)
-                            <p class="dates">September 2021 to February 2022</p>
-                        </h4>
-						<!--<p class="description">Dozens of lessons provided by the Wild Code School.</p>-->
-                        <a href="tableau_project.html">
-                            <img src="images/wildcodeschool_logo.png" alt="Tableau Project" />
-                        </a>
-					</div>					
+
+
 
 				</div>
 
+                <div class="projects">
+                    <!--Card 5-->
+                    <div class = "project" onclick="window.open('manomano_project.html','mywindow');" style="cursor: pointer;">
+                        <div class = "card_title">
+                            <h4>ManoMano: raise customer's engagement</h4>
+                        </div>
+                        <div class = "card_description">
+                        <p>Using Python, Pandas and the Text2Emotion Python Library, we identified customers feeling and made suggestions to improve customer's engagement.</p>
+                        </div>
+                    </div>
 
-                <h2>Jedha Bootcamp: 5 months Data Engineer training</h2>
-
-
-                <div class="project">
-                    <h4>Wait and see
-                        <p class="dates">February 2022 to July 2022</p>
-                    </h4>
-                    <!--<p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Molestias sunt, atque aliquid pariatur.</p>-->
-                        <a href="tableau_project.html">
-                            <img src="images/Jedha_logo.png" alt="Tableau Project" />
-                        </a>
+                    <!--Card 6-->
+                    <div class = "project" onclick="window.open('wild_code_school_project.html','mywindow');" style="cursor: pointer;">
+                        <div class = "card_title">
+                            <h4>Data Analyst training (Python, Pandas...)</h4>
+                        </div>
+                        <div class = "card_description">
+                        <p>Dozens of lessons provided by the Wild Code School.</p>
+                        </div>
+                    </div>
+                    
                 </div>
 
+                <h2>Jedha Bootcamp: 5 months Data Engineer training</h2>
+                <p class="dates">February 2022 to July 2022</p>
 
 
-                
-                
+				<div class="projects">
+
+					<!--Card 1-->
+                        <div class = "project" onclick="window.open('future_project.html','mywindow');" style="cursor: pointer;">
+                            <div class = "card_title">
+                                <h4>Future project at Jedha Bootcamp</h4>
+                            </div>
+                            <div class = "card_description">
+                                <p>Wait and See. Wait and See. Wait and See.</p>
+                            </div>
+					</div>
+
+
+
+				</div>
 			</section>
 		</section>
-        <script src="script.js"></script>
+<!--Project area div-->
+<!--Project area div-->
+<!--Project area div-->
+<!--Project area div-->
+<!--Project area div-->
 
-        
 
+        <footer>
 
-		<footer>
-			<div class="colonne">
-				<h3></h3>
-				<p></p>
-				<p></p>
-				<p></p>
-			</div>
-			<div class="colonne">
-				<h3></h3>
-				<p></p>
-				<p></p>
-				<p></p>
-			</div>
-			<div class="colonne">
-				<h3></h3>
-				<p></p>
-				<p></p>
-				<p></p>
-			</div>
-		</footer>
+        </footer>
 	</body>
+
+    

@@ -46,7 +46,7 @@ nav ul li:hover {
 }
 
 nav {
-
+	background-color: #ffffff;
 }
 
 .page-content {
@@ -105,6 +105,7 @@ footer {
 /* Navigation Bar */
 
 nav {
+	padding: 0 2%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -115,14 +116,14 @@ nav {
 	height: 60px;
 }
 
-nav ul img {
+nav img {
 	width: 42px;
 	height: 42px;
     margin-top: 5px;   
 	border-bottom: 0px solid #A7D9C9;
 }
 
-nav ul img:hover {
+nav img:hover {
 	opacity: 0,3;
 }
 
@@ -139,40 +140,16 @@ nav ul {
 	display: flex;
 	list-style-type: none;
     align-items: center;  
-	padding: 0 2%;
 }
 nav ul li {
 	margin-left: 20px;
 	cursor: pointer;
-	
 }
 
 
 nav ul li:hover {
 	margin-bottom: -3px;
-} 
-
-nav .profile {
-	padding: 0 2%;
-}
-
-nav .nav_container {
-	position: absolute;
-	text-align: center;
-}
-
-nav .nav_container .profile {
-	position: fixed;
-	top: 8px;
-	left: 0px;
-}
-
-nav .nav_container ul {
-	position: fixed;
-	top: 8px;
-	right: 0px;
-}
-
+}  
 
 
 /* Navigation Bar */
