@@ -369,7 +369,7 @@ h5{
 	top: 50%;
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
-	padding: 0 20%;
+	padding: 0 4%;
 
 }
 
@@ -447,7 +447,7 @@ footer {
 
 .project_area {
 
-	width: 100%;
+	width: 50%;
 	height: 700px;
 	
 }
