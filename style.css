@@ -42,7 +42,7 @@ nav ul li:hover {
 }  
 
 .presentation_area {
-	background-color: #8AAAE5;
+	background-color: #009AE4;
 }
 
 nav {
@@ -59,7 +59,7 @@ nav {
 }
 
 .page-content .projects-section .project .card_title {
-	background-color: #8AAAE5;
+	background-color: #009AE4;
 }
 
 .page-content .projects-section .project h4 {
@@ -75,7 +75,7 @@ nav {
 }
 
 .project_area {
-	background-color: #8AAAE5;
+	background-color: #009AE4;
 }
 
 .project_area p .highlightme{
@@ -89,7 +89,8 @@ nav {
 .project_area p a:link { text-decoration: none; color:#ECECEC ; font-weight:bold; }
 
 footer {
-	background-color: #8AAAE5;
+	background-color: #009AE4;
+	/* background-color: #8AAAE5; */
 }
 /* Colors */
 /* Colors */
