@@ -38,7 +38,7 @@ body {
 /* Colors */
 
 nav ul li:hover {
-	border-bottom: 3px solid #8AAAE5;
+	border-bottom: 3px solid #009AE4;
 }  
 
 .presentation_area {
@@ -463,7 +463,7 @@ footer {
 
 .project_area .box{
 
-	width: 40%;
+	width: 60%;
 	position:relative;
     margin: 0 auto;
 }
