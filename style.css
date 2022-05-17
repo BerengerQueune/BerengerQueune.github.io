@@ -447,7 +447,7 @@ footer {
 
 .project_area {
 
-	width: 50%;
+	width: 100%;
 	height: 700px;
 	
 }
@@ -463,7 +463,7 @@ footer {
 
 .project_area .box{
 
-	width: 60%;
+	width: 40%;
 	position:relative;
     margin: 0 auto;
 }
