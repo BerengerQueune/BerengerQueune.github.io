@@ -88,6 +88,11 @@ nav {
 .project_area p a:hover, a:active { text-decoration: none; color:#ECECEC ; font-weight:bold; }
 .project_area p a:link { text-decoration: none; color:#ECECEC ; font-weight:bold; }
 
+.presentation_area p{
+	color: white;
+	font-weight: bold;
+}
+
 footer {
 	background-color: #009AE4;
 	/* background-color: #8AAAE5; */
