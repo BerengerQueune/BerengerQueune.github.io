@@ -20,11 +20,11 @@ img {
 
 /* this is used to change the display of hyperlink. 'text-decoration: none' kept showing a small bar at the bottom so I changed color to white to solve this issue */
 
-nav a:visited {text-decoration: underline dotted white; color:black;}
-nav a:hover {text-decoration: underline dotted white; color:black;}
-nav a:focus {text-decoration: underline dotted white; color:black;}
-nav a:hover, a:active {text-decoration: underline dotted white; color:black;}
-nav a:link {text-decoration: underline dotted white; color:black;}
+.topnav a:visited {text-decoration: underline dotted #323232; color:white;}
+.topnav a:hover {text-decoration: underline dotted #323232; color:white;}
+.topnav a:focus {text-decoration: underline dotted #323232; color:white;}
+.topnav a:hover, a:active {text-decoration: underline dotted #323232; color:white;}
+.topnav a:link {text-decoration: underline dotted #323232; color:white;}
 
 body {
 	font-family: 'Noto Sans JP', sans-serif;
@@ -37,17 +37,18 @@ body {
 /* Colors */
 /* Colors */
 
-nav ul li:hover {
+.topnav ul li:hover {
 	border-bottom: 3px solid #009AE4;
 }  
 
 .presentation_area {
-	background-color: #009AE4;
+	display:block;
+	background: rgb(0,154,228);
+	background: linear-gradient(0deg, rgba(0,154,228,1) 0%, rgba(50,50,50,1) 100%);
+
 }
 
-nav {
 
-}
 
 .page-content {
 	background-color: #ffffff;
@@ -94,7 +95,7 @@ nav {
 }
 
 footer {
-	background-color: #009AE4;
+	background-color: #323232;
 	/* background-color: #8AAAE5; */
 }
 /* Colors */
@@ -110,74 +111,92 @@ footer {
 /* Navigation Bar */
 /* Navigation Bar */
 
-nav {
+.topnav {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
 	align-items: center;
 	position: sticky;
-	z-index: 1;
 	top: 0;
-	height: 60px;
+	z-index:101;
+	height: 120px;
+	width: 100%;
+	background-color: #323232;
 }
 
-nav ul img {
+.topnav ul img {
 	width: 42px;
 	height: 42px;
     margin-top: 5px;   
 	border-bottom: 0px solid #A7D9C9;
+	min-width: 42px;
 }
 
-nav ul img:hover {
+.topnav ul img:hover {
 	opacity: 0,3;
 }
 
-nav .profile {
+/* .topnav .profile {
 	display: flex;
 	align-items: center;
-}
+} */
 
-nav .profile h1 {
-	font-size: 20px;
-}
 
-nav ul {
+
+.topnav .profile ul {
 	display: flex;
 	list-style-type: none;
-    align-items: center;  
-	padding: 0 2%;
+    align-items: center;
+	margin-left: 50%;
 }
-nav ul li {
+
+.topnav .profile li {
+	
+}
+
+.topnav ul li {
 	margin-left: 20px;
 	cursor: pointer;
 	
 }
 
 
-nav ul li:hover {
+.topnav ul li:hover {
 	margin-bottom: -3px;
 } 
 
-nav .profile {
+.topnav .home {
 	padding: 0 2%;
+	width: 30%;
 }
 
-nav .nav_container {
-	position: absolute;
+.topnav .home h1 {
+	font-size: 20px;
+	color: white;
+}
+
+.topnav .profile {
+	width: 30%;
+}
+
+/* .topnav .nav_container {
+
 	text-align: center;
+	width: 100%;
+	height: 100%;
+	background-color: #323232;
 }
 
-nav .nav_container .profile {
-	position: fixed;
+.topnav .nav_container .profile {
+
 	top: 8px;
 	left: 0px;
 }
 
-nav .nav_container ul {
-	position: fixed;
+.topnav .nav_container ul {
+
 	top: 8px;
 	right: 0px;
-}
+} */
 
 
 
@@ -217,17 +236,15 @@ nav .nav_container ul {
 }
 
 
-h5{
-	line-height: 90px;
+.topnav h5{
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
 	font-size: 3vw;
 	text-align: center;
 	position:sticky;
-	z-index:100;
-	top:0;
-	width: 500px;
 	margin: 0 auto;
+	color: white;)
+	
 }
 
 
@@ -422,10 +439,10 @@ footer {
 /* footer */
 
 @media screen and (max-width: 700px) {
-	nav {
+	.topnav {
 		justify-content: center;
 	}
-	nav ul {
+	.topnav ul {
 		display: none;
 	}
 
@@ -508,3 +525,8 @@ footer {
 /* project_area div */
 /* project_area div */
 /* project_area div */
+
+
+
+
+  
