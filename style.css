@@ -24,6 +24,7 @@ img {
 	margin-right: auto;
     width: 1500px;
 	object-fit: contain;
+	bottom: -100px;
   }
 
 /* this is used to change the display of hyperlink. 'text-decoration: none' kept showing a small bar at the bottom so I changed color to white to solve this issue */
