@@ -228,15 +228,9 @@ nav .nav_container ul {
 	
 }
 
-.presentation_area .presentation_text_box {
-	background-color: #f3f5fc;
-	height: 400px;
-	width: 400px;
-	border-radius: 5%;
-	right:0;
-	position: absolute;
-	margin-top: 100px;
-}
+
+
+
 
 /* .presentation_area h1{
 	line-height: 250px;
@@ -287,11 +281,12 @@ h5{
 	border-radius: 5%;
 	right:0;
 	position: absolute;
-	margin-top: 150px;
+	margin-top: 85px;
 	padding: 20px;
+	margin-right: 150px;
 }
 
-.presentation_area .presentation_text_box h3{
+.presentation_area h3{
 	line-height: 20px;
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
@@ -313,7 +308,36 @@ h5{
 	font-family: 'Oswald', sans-serif;
 	text-align: center;
 	margin-top: 20px;
-	font-size: 20px;
+	font-size: 22px;
+}
+
+.presentation_area .tech_stack_box {
+	background-color: #f3f5fc;
+	height: 300px;
+	width: 300px;
+	border-radius: 5%;
+	right:0;
+	position: absolute;
+	margin-top: 130px;
+	padding: 20px;
+	margin-right: -300px;
+}
+
+.presentation_area .tech_stack_box .underline {
+	display:block;
+	width: 55%;
+	height: 10px;
+	background-color: #6441a5;
+	margin: 0 auto;
+	border-radius: 25px;
+	margin-top: 10px;
+}
+
+.presentation_area .tech_stack_box p {
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 25px;
 }
 
 
@@ -325,6 +349,7 @@ h5{
 	z-index: 10;
 	border-radius: 5%;
 	border: 0px solid #A7D9C9;
+	margin-left: -100px;
 }
 
 
