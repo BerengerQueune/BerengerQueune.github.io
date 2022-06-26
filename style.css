@@ -13,7 +13,7 @@
 .presentation_svg {
 	position: absolute;
 	top: 100px;
-	z-index: -1;
+	z-index: 0;
 }
 
 
@@ -134,7 +134,7 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	position: sticky;
-	z-index: 1;
+	z-index: 50;
 	top: 0;
 	height: 60px;
 }
@@ -299,6 +299,39 @@ h5{
 /* presentation_area div */
 /* presentation_area div */
 /* presentation_area div */
+
+
+
+
+/* profile div */
+/* profile div */
+/* profile div */
+
+.profile_career_area {
+	background-color: #f3f5fc;
+	height: 300px;
+	width: 100%;
+	margin-top: 250px;
+	z-index: 1;
+	display: flex;   
+	justify-content: center;
+}
+
+.profile_career_area .profile_career_bar {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	z-index: 2;
+	margin-top: 50px;
+
+
+}
+
+
+
+/* profile div */
+/* profile div */
+/* profile div */
 
 
 
