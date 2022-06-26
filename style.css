@@ -451,7 +451,7 @@ h5{
 
 .page-content .projects-section .project .card_title:hover {
 	opacity: 1;
-	transition: 0.7s;
+	transition: 0.3s;
 }
 
 .page-content .projects-section .project .card_description {
@@ -466,7 +466,7 @@ h5{
 
 .page-content .projects-section .project .card_description:hover {
 	opacity: 0;
-	transition: 0.7s;
+	transition: 0.3s;
 }
 
 .page-content .projects-section .project .card_description p {
