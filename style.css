@@ -565,7 +565,6 @@ footer {
 	}
 
 	.page-content .projects-section .project {
-		margin-right: 0;
 		margin-bottom: 20px;
 		max-width: 100%;
 	}
@@ -576,6 +575,7 @@ footer {
 	footer {
 		justify-content: flex-start;
 	}
+
 	footer .column {
 		width: 80%;
 	}
