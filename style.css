@@ -594,6 +594,8 @@ footer {
 		background-color: white;
 	}
 
+
+
 	.presentation_area .presentation_text_box {
 		display:none;
 	}
@@ -617,7 +619,7 @@ footer {
 	}
 
 	h5{
-		top:30px;
+		top:50px;
 	}
 }
 
