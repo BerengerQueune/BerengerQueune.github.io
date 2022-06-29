@@ -594,6 +594,10 @@ footer {
 		background-color: white;
 	}
 
+	nav ul {
+		display:none;
+	}
+
 
 
 	.presentation_area .presentation_text_box {
