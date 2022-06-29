@@ -396,8 +396,6 @@ h5{
 	text-align: center;
 	z-index: 2;
 	margin-top: 50px;
-
-
 }
 
 
@@ -589,6 +587,41 @@ footer {
 	}
 }
 
+@media screen and (max-width: 1230px) {
+
+	nav ul {
+		display:none;
+	}
+
+	.presentation_area .presentation_text_box {
+		display:none;
+	}
+
+	.presentation_area .box img{
+		margin-left: -50px;
+	}
+
+	.presentation_area .presentation_text_box {
+		display:none;
+	}
+
+
+	.profile_career_area .profile_career_bar {
+		display:none;
+	}
+
+	.presentation_area .tech_stack_box {
+		background-color: #f3f5fc;
+		height: 300px;
+		width: 300px;
+		border-radius: 5%;
+		right:0;
+		position: absolute;
+		margin-top: 430px;
+		padding: 20px;
+		margin-right: -80px;
+	}
+}
 
 
 
