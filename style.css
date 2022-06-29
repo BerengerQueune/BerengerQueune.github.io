@@ -283,7 +283,7 @@ h5{
 	position: absolute;
 	margin-top: 85px;
 	padding: 20px;
-	margin-right: 150px;
+	margin-right: 100px;
 }
 
 .presentation_area h3{
@@ -548,12 +548,12 @@ footer {
 /* footer */
 /* footer */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 2250px) {
 	nav {
 		justify-content: center;
 	}
 	nav ul {
-		display: none;
+
 	}
 
 	.page-content header {
@@ -578,6 +578,10 @@ footer {
 	}
 	footer .column {
 		width: 80%;
+	}
+
+	.presentation_area .box img{
+		margin-left: -370px;
 	}
 }
 
