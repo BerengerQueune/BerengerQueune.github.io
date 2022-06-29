@@ -589,8 +589,9 @@ footer {
 
 @media screen and (max-width: 1230px) {
 
-	nav ul {
-		display:none;
+	nav {
+		height: 100px;
+		background-color: white;
 	}
 
 	.presentation_area .presentation_text_box {
@@ -611,15 +612,12 @@ footer {
 	}
 
 	.presentation_area .tech_stack_box {
-		background-color: #f3f5fc;
-		height: 300px;
-		width: 300px;
-		border-radius: 5%;
-		right:0;
-		position: absolute;
 		margin-top: 430px;
-		padding: 20px;
 		margin-right: -80px;
+	}
+
+	h5{
+		top:30px;
 	}
 }
 
