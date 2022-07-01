@@ -585,6 +585,14 @@ footer {
 	h5{
 		top:-15px;
 	}
+
+	.presentation_svg {
+		margin-top: -100px;
+
+	}
+
+
+
 }
 
 @media screen and (max-width: 1230px) {
@@ -618,6 +626,12 @@ footer {
 
 	h5{
 		margin-top:-50px;
+	}
+
+	.presentation_svg {
+		margin-top: -200px;
+		display:none;
+
 	}
 }
 
